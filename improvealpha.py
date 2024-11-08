@@ -40,7 +40,7 @@ def numeric_to_categorical(df_numeric, original_df):
     return df_categorical
 
 # Ruta del archivo Excel original
-file_path = 'C:/Users/pc1/Desktop/AlfaDeCronbachScript/tito.xlsx'
+file_path = 'C:/Users/Usuario/Desktop/AlphaScript/sago.xlsx'
 
 # Cargar el archivo Excel
 data = pd.read_excel(file_path)
@@ -56,7 +56,7 @@ improved_data, improved_alpha = improve_reliability(data_numeric)
 improved_data_categorical = numeric_to_categorical(improved_data, data)
 
 # Guardar el nuevo archivo Excel
-output_path = 'titoResponse2.xlsx'
+output_path = 'SagoResponse2.xlsx'
 improved_data_categorical.to_excel(output_path, index=False)
 
 print(f'Alfa de Cronbach mejorado: {improved_alpha}')
